@@ -1,0 +1,25 @@
+POST  http://localhost:4000/todo HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "HOLI Nest JS",
+    "description": "Learn nest js and create a project"
+}
+###
+
+PUT  http://localhost:4000/todo/66d509f1b2fc621cd814779f HTTP/1.1
+Content-Type: application/json
+
+{
+    "status": "IN_PROGRESS"
+}
+
+###
+GET  http://localhost:4000/todo HTTP/1.1
+
+###
+GET  http://localhost:4000/todo/66d509f1b2fc621cd814779f HTTP/1.1
+
+###
+DELETE   http://localhost:4000/todo/66d50d4a7ebbedee5ffc4a02 HTTP/1.1
+
